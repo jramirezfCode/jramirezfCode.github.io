@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Hedvig+Letters+Sans&family=Montserrat:wght@100;300;400;500;600;700&family=Pacifico&family=Roboto:wght@100;300;400&family=Satisfy&display=swap" rel="stylesheet">
+        <link rel="icon" href="./img/8K.png" type="image/x-icon">
+        <link rel="stylesheet" href="./stylo.css">
+        <title>NOSOTROS</title>
+    </head>
+    <body>
+    
+        <header>
+            <img class="logoweb" src="./img/LogoWeb2.png" alt="logoweb">
+            <nav class="navigation">
+                <a href="./Inicio.html">INICIO</a>
+                <a href="./Nosotros.html">NOSOTROS</a>
+                <a href="./Proyectos.html">PROYECTOS</a>
+                <a href="./Blog.html">BLOG</a>
+                <a href="./Contactanos.html">CONTACTANOS</a>
+            </nav>
+            <a href="#" class="WhatsApp-Boton"><i class='bx bxl-whatsapp'></i> WhatsApp</a>
+        </header>
+    
+    
+       <!-- Apartado Nosotros -->
+        
+        <section class="nosotros">
+            
+            <div class="contenedor-imagen">
+                <img src="./img/Nosotros-imagen.webp" alt="nosotros" class="nosotros-imagen">
+                <div class="contenedor-texto">
+                    <h2 class="titulo-nosotros">Nosotros</h2>
+                    <p class="texto-nosotros">Como una empresa joven con 2 años de experiencia, nos dedicamos apasionadamente a la creación de páginas web, al desarrollo de software, al marketing digital y a la implementación de chatbots. En 8k Web Studio, nos esforzamos por ofrecer soluciones digitales innovadoras y adaptadas a tus necesidades específicas. Nuestra visión abarca liderar el panorama digital, brindando servicios de la más alta calidad y fomentando la innovación en cada proyecto que emprendemos.</p>
+                </div>
+            </div>
+            <!-- Linea divesora -->
+                <div class="separator"></div>
+            <div class="contenedor-imagen">
+                <img src="/img/nuestra-mision.webp" alt="Nuestra Mision" class="imagen-nuestra-mision">
+                <div class="contenedor-texto">
+                    <h2 class="titulo-nuestra-mision">Nuestra Mision</h2>
+                    <p class="texto-nuestra-mision">En 8k Web Studio, no solo creamos sitios web, desarrollamos software o implementamos estrategias de marketing digital; nuestra misión va más allá. Nos esforzamos por transformar tus ideas en soluciones digitales efectivas y atractivas. Cada proyecto es una oportunidad para canalizar la creatividad y la tecnología hacia resultados tangibles. Estamos comprometidos con la innovación constante y el perfeccionamiento de nuestras habilidades para ofrecerte servicios que no solo satisfacen, sino que superan tus expectativas.</p>
+                </div>
+            </div>
+          
+        </section>
+     <!-- Linea divesora -->
+     <div class="separator"></div>
+        <!-- Sección de Servicios -->
+        <section id="tecnologias" class="nuestras-tecnologias-nosotros">
+            <h2>NUESTRA TECNOLOGÍA</h2>
+            <p>En 8k Web Studio, trabajamos con una variedad de tecnologías para ofrecer soluciones digitales de calidad</p>
+            <ul>
+                <li><img width="144" height="144" src="https://img.icons8.com/color/144/html-5--v1.png" alt="html-5--v1"/> HTML5</li>
+                <li><img width="144" height="144" src="https://img.icons8.com/color/144/css3.png" alt="css3"/>CSS3</li>
+                <li><img width="144" height="144" src="https://img.icons8.com/color/144/javascript--v1.png" alt="javascript--v1"/>JavaScript</li>
+                <li><img width="144" height="144" src="https://img.icons8.com/color/144/react-native.png" alt="react-native"/> React</li>
+                <li><img width="144" height="144" src="https://img.icons8.com/color/144/java-coffee-cup-logo--v1.png" alt="java-coffee-cup-logo--v1"/> Java</li>
+                <li><img width="144" height="144" src="https://img.icons8.com/color/144/mysql-logo.png" alt="mysql-logo"/>MySQL</li>
+                <li><img width="144" height="144" src="https://img.icons8.com/color/144/python--v1.png" alt="python--v1"/>Python</li>
+            </ul>
+        </section>
+        
+     <!-- Linea divesora -->
+     <div class="separator"></div>
+        <!-- Sección de Contacto -->
+       
+        <section class="container-contactos" id="contactanos-Nosotros">
+            <h2 class="titulo-contactanos">CONTACTANOS</h2>
+            <div class="conteiner-contacto-nosotros">
+                
+                <form action="./PHP/formulario.php" method="post">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+                
+                    <label for="celular">Número Celular:</label>
+                    <input type="tel" id="celular" name="celular" autocomplete="tel" pattern="[0-9]+" title="Ingrese solo números" required>
+                
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" autocomplete="email" required>
+                
+                    <label for="comentario">Comentario:</label>
+                    <textarea id="comentario" name="comentario" rows="4" autocomplete="off" required></textarea>
+                
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="aceptar" name="aceptar" required>
+                        <label for="aceptar">Acepto el uso de mis datos para los fines indicados.</label>
+                    </div>
+                
+                    <button type="submit">Enviar</button>
+                </form>
+                
+                
+                <div class="imagen-formulario">
+                    <img src="./img/Foto Contactanos.png" alt="">
+                </div>
+            </div>
+        </section>
+        
+    
+        
+    
+        <!-- whatsapp flotante -->
+        <Section class="whatsapp-flow">
+            <a href="enlace-a-tu-numero-de-WhatsApp" class="whatsapp-flotante">
+                <i class='bx bxl-whatsapp'></i>
+              </a>
+        </Section>
+        <Section class="footter">
+            <footer class="footer-container">
+                <div class="footer-redes">
+                    <h3 class="footer-titulo">Nuestras Redes Sociales</h3>
+                    <a href="#" class="icono-red-social"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="#" class="icono-red-social"><i class='bx bxl-instagram-alt' ></i></a>
+                    <a href="#" class="icono-red-social"><i class='bx bxl-linkedin-square' ></i></a>
+                </div>
+        
+                <div class="footer-empresa">
+                    <h3 class="footer-titulo">Información de la Empresa</h3>
+                    <p>Dirección: Av. Lima 9090</p>
+                    <p>Teléfono: +51 907 245 760</p>
+                    <p>Correo: info@8kwebstudio.com</p>
+                </div>
+        
+                <div class="footer-Newsletter">
+                    <h3 class="footer-titulo">Suscríbete al Newsletter</h3>
+                    <form action="#" method="post">
+                        <input type="email" name="email" placeholder="Tu correo electrónico" required>
+                        <button type="submit">Suscribirse</button>
+                    </form>
+                </div>
+        
+                <div class="footer-pagina">
+                    <h3 class="footer-titulo">Paginas</h3>
+                    <a href="#">Políticas de Privacidad</a>
+                    <a href="#">Políticas de Cookies</a>
+                    <a href="#">Trabaja con Nosotros</a>
+                </div>
+                <div class="copyright-section">
+                    <p>&copy; 2022-2024 8K Web Studio. Todos los Derechos Reservados.</p>
+                </div>
+            </footer>
+        </Section>
+    
+        <script src="./animacion.js" defer></script>
+    </body>
+    
+    </html>

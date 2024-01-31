@@ -1,0 +1,895 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+   
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f3fb;
+}
+
+header{
+    width: 100%;
+    padding: 35px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: #f2f3fb;
+    
+}
+
+/* .separator {
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0.2));
+    margin: 20px 0; 
+} */
+
+/** 
+*!Logo de la Web
+**/
+.logoweb {
+    width: 10%; 
+    height: auto;
+    left: 10px; 
+    margin-top: -70px;
+    margin-bottom: -70px;
+  
+}
+
+span{
+    color:#D72425 ;
+}
+
+/** 
+*! Menu Inicio - Nosostros - Proyecto - Blog  - Contactanos
+**/
+.navigation {
+    display: flex;
+    gap: 60px;
+    margin-top: -70px;
+    margin-bottom: -70px; 
+
+}
+
+.navigation a {
+    font-size: 1.3em;
+    color: #534d86;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s; 
+    position: relative; 
+}
+
+.navigation a:hover {
+    color: #46436c;
+}
+
+.navigation a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px; 
+    background-color: #D62425; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s; 
+}
+
+.navigation a:hover::after {
+    width: 100%; 
+}
+
+/** 
+*!whatsapp menu bar 
+**/
+
+.WhatsApp-Boton{
+    color: white;
+    text-decoration: none;
+    padding: 8px 30px;
+    background-color: #25D366;
+    border-radius:30px;
+    border: 2px solid #25D366;
+    font-weight: 500;
+    transition: 0.3s;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -70px;
+    margin-bottom: -70px; 
+}
+
+
+.WhatsApp-Boton:hover{
+    color: #075E54;
+    background: transparent;
+}
+.WhatsApp-Boton i {
+    color: #ffffff;
+    font-size: 1.5em;
+    background-color: #25D366; 
+    border-radius: 30px; 
+}
+
+.WhatsApp-Boton i:hover{
+    color: #25D366;
+    background: transparent;
+}
+
+/** 
+*!whatsapp Flotante
+**/
+
+.whatsapp-flotante {
+    position: fixed;
+    bottom: 20px;
+    left: 95.4%;
+    
+}
+  
+.whatsapp-flotante i {
+    color: #25D366;
+    font-size: 100px;
+    transition: color 0.3s;
+    border: none;
+}
+  
+.whatsapp-flotante:hover i {
+    color: #075E54; 
+}
+
+/** 
+*!Titulo del 8k Web Studio, crea conecta y crece, texto, botones, imagen e iconos
+**/
+
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #e8eaf7;
+    
+}
+
+.rocket {
+    margin-left: 9%; 
+}
+
+.rocket img {
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+.content {
+    max-width: 600px;
+    color: rgb(68, 60, 60);
+    margin-left: 250px;
+    margin-top: -180px;
+    padding: 0 10px;
+}
+
+.content h1 {
+    font-size: 5em;
+    color: #5D18EB;
+}
+
+.content h2 {
+    font-size: 2.4em;
+    
+}
+.content p {
+    padding: 10px 0 40px 0;
+    font-size: 1.2em;
+    text-align: justify;
+}
+/** 
+*!Boton de inicio Contactanos y Proyectos
+**/
+
+.btn-inicio a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #D62425; 
+    border-radius: 10px;
+    border: 2px solid #D62425; 
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+/** 
+*!Estilos al pasar el mouse 
+**/
+.btn-inicio a:hover {
+    color: #D62425; 
+    background: #ffffff; 
+    border: 2px solid #D62425; 
+}
+
+/** 
+*!Iconos de redes sociales, facebook, instragram, linkeding y Correo
+**/
+
+.redes {
+    position:static;
+    margin-top: 35px; 
+}
+
+.redes i {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: #45436C;
+    border-radius: 50px;
+    margin-right: 22px;
+    text-align: center;
+    color: white; 
+    line-height: 50px;
+    transition: 0.3s;
+    font-size: 40px;
+}
+
+.redes i:hover {
+    transform: translateY(-7px);
+}
+
+
+/** 
+*!Seccion de Nuestros servicios
+**/
+
+.servicios {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+/** 
+*!Titutlo nuestros servicios
+**/
+.servicios-titulo {
+    font-size: 4em;
+    font-weight: bold;
+    color: #D62425; 
+    font-family: 'Roboto', sans-serif;
+    margin-top: 0px;
+}
+/** 
+*!Card nuestro servicios
+**/
+
+.nuestros-servicios {
+    background-color: #f2f3fb;
+    padding: 50px 80px;
+    
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 450px;
+    height: 600px; 
+    margin: 10px;
+    padding: 20px;
+    background-color: #e8eaf7;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 230px; 
+    object-fit: cover; 
+    border-radius: 8px;
+}
+
+.card h3 {
+    color: #46436c;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    font-size: 2em;
+}
+
+.card p {
+    color: #46436c;
+    text-align:left;
+    font-size: 1.4em;
+    background-color: #e8eaf7;
+    
+}
+
+/** 
+*!boton card
+**/
+
+.btn-mas-info {
+    background-color: #D62425;
+    color: #fff;
+    padding: 15px 20px; 
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn-mas-info:hover {
+    background-color: #333;
+}
+
+
+/** 
+*!titulo del texto FAQ
+**/
+
+.faq-titulo {
+    font-size: 4em;
+    font-weight: bold;
+    color: #D62425; 
+    font-family: 'Roboto', sans-serif;
+    text-align: center;  
+   
+}
+
+/** 
+*!Texto de porque es bueno contratar nuestros servicios 
+**/
+
+
+.container-preguntas-frecuentes{
+    background-color: #e8eaf7;
+    height: 100vh;   
+}
+
+.faq-container {
+    width:54%;
+    overflow: hidden;
+    margin-top: 100px;
+    margin-right:100px;
+    position: relative;
+    
+    
+    
+   
+    
+}
+
+/** 
+*!Imagen de Preguntas Frecuentes 
+**/
+
+.faq-image {
+    width: 40%; 
+    float: left; 
+    margin-left: 3%;
+    
+    
+}
+.question {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    border-bottom: 2px solid #ddd;
+    transition: background-color 0.3s;
+}
+
+.question-text {
+    flex-grow: 1;
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+.arrow-icon {
+    font-size: 35px;
+    color: #555;
+    margin-left: 10px;
+}
+
+.answer {
+    display: none;
+    padding: 10px;
+    font-size: 18px;
+    color: #D62425;
+    margin-left: 18px;
+}
+
+.question.selected {
+    background-color: #e8eaf7;
+}
+
+.selected .question-text {
+    color: #D62425; 
+}
+
+/**  
+*! PAGINA DE NOSOTROS 
+**/
+
+/* Estilo para la imagen de Nosotros */
+
+.nosotros{
+    background-color: #e8eaf7;
+}
+
+.contenedor-imagen {
+    position: relative;
+    
+}
+
+.nosotros-imagen {
+    width: 90%;
+    height: 600px;
+    object-fit: cover;
+    filter: brightness(0.5);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 10px;
+    
+}
+
+.contenedor-texto {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: #ffffff; 
+    max-width: 700px;
+    text-align: justify;
+}
+
+.titulo-nosotros {
+    font-size: 6em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #e8eaf7; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+.slogan-nosotros {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #8a87cd; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); 
+    
+}
+
+.texto-nosotros {
+    font-size: 1.2em;
+    line-height: 1.4;
+    color: #e8eaf7; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Nuesta Mision */
+
+.contenedor-imagen {
+    position: relative;
+}
+
+.imagen-nuestra-mision {
+    width: 90%;
+    height: 600px;
+    object-fit: cover;
+    filter: brightness(0.5);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 10px;
+    
+}
+
+.contenedor-texto {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: #ffffff; 
+    max-width: 700px;
+    text-align: justify;
+}
+
+.titulo-nuestra-mision {
+    font-size: 6em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #e8eaf7; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+.texto-nuestra-mision {
+    font-size: 1.2em;
+    line-height: 1.4;
+    color: #e8eaf7; 
+    
+}
+
+/* Nuestras tecnologia*/
+
+/* Estilos para la sección de Nuestras Tecnologías */
+.nuestras-tecnologias-nosotros {
+    text-align: center;
+    padding: 50px 0;
+    height: 50vh;
+}
+
+.nuestras-tecnologias-nosotros h2 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #D62425;
+}
+
+.nuestras-tecnologias-nosotros p {
+    font-size: 2em;
+    color: #46436c;
+    margin-bottom: 30px;
+}
+
+.nuestras-tecnologias-nosotros ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nuestras-tecnologias-nosotros li {
+    font-size: 2em;
+    margin: 0 20px 20px;
+    color: #46436c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fcfcfc;
+    padding: 15px; 
+    border-radius: 10px; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Aumenta el tamaño de los íconos */
+.nuestras-tecnologias-nosotros li i {
+    font-size: 5em;
+    padding: 0; 
+    border-radius: 0; 
+    
+}
+
+/* Formulario de Contactanos en pagina nosotros */
+
+.titulo-contactanos {
+    font-size: 4em;
+    text-align: center;
+    margin-top: 2px;
+    font-family: 'Roboto', sans-serif;
+    color: #D62425;
+}
+
+.container-contactos {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #e8eaf7;
+}
+
+.conteiner-contacto-nosotros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.conteiner-contacto-nosotros form {
+    max-width: 600px;
+    width: 100%;
+    margin: 50px;
+    padding: 20px;
+  
+}
+
+.conteiner-contacto-nosotros label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 8px;
+    color: #666;
+    text-align: left;
+}
+
+.conteiner-contacto-nosotros input,
+.conteiner-contacto-nosotros textarea,
+.conteiner-contacto-nosotros button{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1em;
+    box-sizing: border-box; 
+}
+
+.conteiner-contacto-nosotros .checkbox-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.conteiner-contacto-nosotros input[type="checkbox"] {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.conteiner-contacto-nosotros label[for="aceptar"] {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-left: 5px;
+}
+
+/* Ajuste para mejorar la alineación vertical */
+.conteiner-contacto-nosotros .checkbox-container label {
+    flex: 0 auto; 
+}
+
+.conteiner-contacto-nosotros button,
+.conteiner-contacto-nosotros input[type="checkbox"] {
+    flex: 0 1;
+}
+
+.conteiner-contacto-nosotros button {
+    background-color: #D62425;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.conteiner-contacto-nosotros button:hover {
+    background-color: #e03800;
+}
+
+.imagen-formulario {
+    width: 36%;
+    margin-left: 20px;
+}
+
+.imagen-formulario img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* footer */
+.footter {
+    background-color: #2a273f;
+    padding: 30px 0;
+    text-align: center;
+   
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.footer-titulo {
+    color: #ffffff;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.footer-redes,
+.footer-empresa,
+.footer-Newsletter,
+.footer-pagina {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.icono-red-social {
+    font-size: 50px;
+    color: #ffffff;
+    margin-right: 15px;
+}
+.icono-red-social i{
+    color: white;
+}
+
+.footer-empresa p {
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.footer-Newsletter form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.footer-Newsletter input {
+    flex: 1;
+    padding: 10px;
+}
+
+.footer-Newsletter button {
+    padding: 10px 20px;
+    background-color: #D62425;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.footer-pagina a {
+    display: block;
+    color: #ffffff;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+.copyright-section {
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 20px;
+       
+}
+
+/* resposivo */
+
+@media (min-width: 768px) and (max-width: 1024px) and (max-width:385px){
+header {
+    padding: 10px;
+}
+
+.logo {
+    font-size: 1em;
+}
+
+.navigation {
+    font-size: 0.8em;
+    margin-right: 20px;
+    margin-left: 40px;
+}
+
+.WhatsApp-Boton{
+    padding: 5px 30px;
+    font-size: 0.7em; 
+}
+
+
+.home,
+.home2 {
+    padding: 30px;
+}
+
+.rocket,
+.content {
+    margin-left:-5%;
+}
+
+.content p{
+    text-align: justify;
+}
+
+.content h2 {
+    font-size: 1.3em;
+}
+
+.content h1 {
+    font-size: 2.5em;
+}
+
+.WhatsApp a {
+    padding: 8px 8px;
+    font-size: 0.8em;
+}
+
+.WhatsApp a:nth-child(2){
+    color: #665da5;
+    background: transparent;
+    margin-left: 30px;
+    padding: 10px 20px;
+
+}
+
+.whatsapp-flotante {
+    position: fixed;
+    bottom: 30px;
+    left: 80%;
+   
+  }
+  
+  .whatsapp-flotante i {
+    color: #25D366;
+    font-size: 100px;
+    transition: color 0.3s;
+    margin-right: 100px;
+
+  }
+  
+  .whatsapp-flotante:hover i {
+    color: #075E54; 
+  }
+
+.redes {
+    bottom: 160px;
+}
+
+.redes i {
+    width: 30px;
+    height: 30px;
+    line-height: 30px; 
+    text-align: center; 
+    outline: 1px solid #bbc0e6;
+    border-radius: 50%; 
+}
+
+i {
+    font-size: 25px;
+    color: #665da5;
+    text-indent: center;
+}
+
+
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.whatsapp-flotante {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-flotante:hover {
+    background-color: #128C7E;
+}
+}
