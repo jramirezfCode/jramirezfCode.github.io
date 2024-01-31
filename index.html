@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Hedvig+Letters+Sans&family=Montserrat:wght@100;300;400;500;600;700&family=Pacifico&family=Roboto:wght@100;300;400&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="icon" href="./img/8K.png" type="image/x-icon">
+    <link rel="stylesheet" href="./stylo.css">
+    <title>8K Web Studio</title>
+    
+</head>
+<body>
+    <header>
+        <img class="logoweb" src="./img/LogoWeb2.png" alt="logoweb">
+        <nav class="navigation">
+            <a href="./Inicio.html">INICIO</a>
+            <a href="./Nosotros.html">NOSOTROS</a>
+            <a href="./Proyectos.html">PROYECTOS</a>
+            <a href="./Blog.html">BLOG</a>
+            <a href="./Contactanos.html">CONTACTANOS</a>
+        </nav>
+        <a href="#" class="WhatsApp-Boton"><i class='bx bxl-whatsapp'></i> WhatsApp</a>
+    </header>
+
+    <section class="home">
+        <div class="content">
+            <h1>8k <span> Web Studio</span></h1>
+                <h2>Crea, Conecta y Crece </h2>
+                    <p>En 8k Web Studiote ofrecemos los mejores servicios de creación de Páginas Web, creación de ChatBot WhatsApp Business, Software para empresas a medida del cliente y los servicios de Marketing Digital.<br>Somos un equipo de profesionales que te ayudará a crear tu web, conectar con tu público y crecer tu negocio, utilizando las últimas tecnologías, herramientas y metodologías. Contacta con nosotros y asegura tu éxito con 8k Web Studio.</p>
+
+                    <div class="btn-inicio">
+                        <a href="#" class="inicio-contactanos">CONTACTANOS</a>
+                        <a href="#" class="inicio-proyectos">PROYECTOS</a>
+                    </div>
+                    
+         
+            <div class="redes">
+                <i class='bx bxl-facebook-circle'></i>
+                <i class='bx bxl-instagram-alt' ></i>
+                <i class='bx bxl-linkedin-square' ></i>
+                <i class='bx bxs-envelope' ></i>
+
+            </div>
+        </div>
+            <div class="rocket">
+                <img src="./img/rocket.png" alt="rocket">
+            </div>
+    
+    </section>
+    <!-- Linea divesora -->
+    <div class="separator"></div>
+<!-- Nuestros Servicios -->
+    <Section class="nuestros-servicios">
+        <div class="servicios">
+            <h3 class="servicios-titulo">NUESTROS SERVICOS</h3>
+        </div>
+        <div class="services">
+            <div class="card">
+                <img src="./img/Creacion-de-paginas-Web.webp" alt="Creación de Páginas Web">
+                <h3>Creación de Páginas Web</h3>
+                <p>
+                    Diseñamos y desarrollamos páginas web modernas y funcionales que se adaptan a tus necesidades y objetivos. <br>
+                    Ofrecemos servicios de diseño de interfaz, desarrollo frontend y backend y optimización para motores de búsqueda (SEO).
+                </p>
+                <a href="#" class="btn-mas-info">Más Información</a>
+            </div>
+        
+            <div class="card">
+                <img src="./img/desarrollo-software.webp" alt="Desarrollo de Software">
+                <h3>Desarrollo de Software</h3>
+                <p>
+                    Desarrollamos software a medida para celulares Android, iPhone y PC, garantizando soluciones eficientes y personalizadas. <br>
+                    Nuestro enfoque incluye análisis de requisitos, diseño de arquitectura, implementación y pruebas exhaustivas.
+                </p>
+                <a href="#" class="btn-mas-info">Más Información</a>
+            </div>
+        
+            <div class="card">
+                <img src="./img/marketing-digital.webp" alt="Marketing Digital">
+                <h3>Marketing Digital</h3>
+                <p>
+                    Impulsamos tu presencia online mediante estrategias de marketing digital que te ayudan a alcanzar a tu audiencia objetivo. <br>
+                    Nuestros servicios abarcan desde SEO y SEM hasta gestión de redes sociales y análisis de datos.
+                </p>
+                <a href="#" class="btn-mas-info">Más Información</a>
+            </div>
+        
+            <div class="card">
+                <img src="./img/ChatBot.png" alt="Chatbot">
+                <h3>Chatbot</h3>
+                <p>
+                    Implementamos chatbots inteligentes para mejorar la interacción con tus clientes y automatizar procesos de atención al cliente. <br>
+                    Nuestros chatbots están diseñados para brindar respuestas rápidas y precisas, mejorando la experiencia del usuario.
+                </p>
+                <a href="#" class="btn-mas-info">Más Información</a>
+            </div>
+        </div>
+    </Section>
+
+ <!-- Linea divesora -->
+ <div class="separator"></div>
+
+<!-- Texto porque contratar nuestros servicios -->
+<section class="container-preguntas-frecuentes">
+    <div>
+        <div class="preguntas-titulo">
+            <h3 class="faq-titulo">PREGUNTAS FRECUENTES</h3>
+        </div>
+        <div>
+            <img src="./img/preguntas-frecuentes3.png" alt="Imagen FAQ" class="faq-image">
+        </div>
+        <div class="faq-container">
+            <div class="question" onclick="toggleAnswer('web', this)">
+                <span class="question-text">¿Por qué es bueno contratar a un especialista para la Creación de tu Páginas Web?</span>
+                <i class='arrow-icon bx bx-down-arrow-alt'></i>
+            </div>
+        <div class="answer" id="web">Obtén una presencia en línea impactante y profesional. Atrae a tu audiencia con un diseño web atractivo y funcional. Ofrece una experiencia de usuario intuitiva y adaptada a tus necesidades.</div>
+    
+        <div class="question" onclick="toggleAnswer('software', this)">
+            <span class="question-text">¿Cuáles son los beneficios de contratar a un Desarrollador de Software a medida?</span>
+            <i class='arrow-icon bx bx-down-arrow-alt'></i>
+        </div>
+        <div class="answer" id="software">Desarrollamos software personalizado para Android, iPhone y PC. Garantizamos soluciones eficientes, seguras y adaptadas a las necesidades específicas de tu empresa.</div>
+    
+        <div class="question" onclick="toggleAnswer('marketing', this)">
+            <span class="question-text">¿Cómo puede el Marketing Digital va impulsar mi presencia online?</span>
+            <i class='arrow-icon bx bx-down-arrow-alt'></i>
+        </div>
+        <div class="answer" id="marketing">Impulsamos tu presencia online mediante estrategias de marketing digital. Aprovecha las redes sociales, SEO y publicidad online para llegar a tu audiencia objetivo.</div>
+    
+        <div class="question" onclick="toggleAnswer('chatbot', this)">
+            <span class="question-text">¿Cuál es la utilidad de implementar un Chatbot en los servicios que brinda tu empresa?</span>
+            <i class='arrow-icon bx bx-down-arrow-alt'></i>
+        </div>
+        <div class="answer" id="chatbot">El Chatbot mejora la interacción con los visitantes de tu sitio web. Proporciona respuestas rápidas, automatiza tareas y ofrece un soporte eficiente, mejorando la experiencia del usuario.</div>
+    </div>
+</section>
+    
+    <!-- whatsapp flotante -->
+    <Section class="whatsapp-flow">
+        <a href="enlace-a-tu-numero-de-WhatsApp" class="whatsapp-flotante">
+            <i class='bx bxl-whatsapp'></i>
+          </a>
+    </Section>
+<!-- Footer -->
+<Section class="footter">
+    <footer class="footer-container">
+        <div class="footer-redes">
+            <h3 class="footer-titulo">Nuestras Redes Sociales</h3>
+            <a href="#" class="icono-red-social"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="#" class="icono-red-social"><i class='bx bxl-instagram-alt' ></i></a>
+            <a href="#" class="icono-red-social"><i class='bx bxl-linkedin-square' ></i></a>
+        </div>
+
+        <div class="footer-empresa">
+            <h3 class="footer-titulo">Información de la Empresa</h3>
+            <p>Dirección: Av. Lima 9090</p>
+            <p>Teléfono: +51 907 245 760</p>
+            <p>Correo: info@8kwebstudio.com</p>
+        </div>
+
+        <div class="footer-Newsletter">
+            <h3 class="footer-titulo">Suscríbete al Newsletter</h3>
+            <form action="#" method="post">
+                <input type="email" name="email" placeholder="Tu correo electrónico" required>
+                <button type="submit">Suscribirse</button>
+            </form>
+        </div>
+
+        <div class="footer-pagina">
+            <h3 class="footer-titulo">Paginas</h3>
+            <a href="#">Políticas de Privacidad</a>
+            <a href="#">Políticas de Cookies</a>
+            <a href="#">Trabaja con Nosotros</a>
+        </div>
+        <div class="copyright-section">
+            <p>&copy; 2022-2024 8K Web Studio. Todos los Derechos Reservados.</p>
+        </div>
+    </footer>
+</Section>
+    <script src="./animacion.js" defer></script>
+</body>
+
+</html>
